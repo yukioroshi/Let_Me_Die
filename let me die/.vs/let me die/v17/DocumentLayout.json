@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{6C89FE07-3F58-7D0B-7670-5439AE97010C}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C89FE07-3F58-7D0B-7670-5439AE97010C}|Assembly-CSharp.csproj|c:\\users\\emirabella\\documents\\github\\let_me_die\\let me die\\assets\\script\\ennemiebehaviourscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6C89FE07-3F58-7D0B-7670-5439AE97010C}|Assembly-CSharp.csproj|C:\\Users\\emirabella\\Documents\\GitHub\\Let_Me_Die\\let me die\\assets\\script\\ennemiebehaviourscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6C89FE07-3F58-7D0B-7670-5439AE97010C}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ennemiebehaviourscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -47,8 +47,7 @@
               "RelativeToolTip": "Assets\\Script\\ennemieBehaviourScript.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T10:17:04.337Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T10:17:04.337Z"
             },
             {
               "$type": "Document",
