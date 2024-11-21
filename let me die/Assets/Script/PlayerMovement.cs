@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D rb2d;
@@ -13,7 +14,13 @@ public class PlayerMovement : MonoBehaviour
 
     public PlayerInputActions playerControls;
 
+    [SerializeField]
+    private InputActionReference pointerPosition;
+
     Vector2 moveDirection = Vector2.zero;
+    private Vector2 pointerInput;
+
+    private weaponParent weaponparent;
 
     private InputAction move;
     private InputAction fire;
@@ -21,6 +28,8 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         playerControls = new PlayerInputActions();
+
+        weaponparent = GetComponentInChildren<weaponParent>();
     }
 
     private void OnEnable()
@@ -43,13 +52,17 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
         moveDirection = move.ReadValue<Vector2>();
+
+        pointerInput = GetPointerInput();
+        weaponparent.PointerPosition = pointerInput;
+
     }
 
     private void FixedUpdate()
@@ -60,5 +73,12 @@ public class PlayerMovement : MonoBehaviour
     private void Fire(InputAction.CallbackContext context)
     {
         Debug.Log("piuu");
+    }
+
+    private Vector2 GetPointerInput()
+    {
+        Vector3 mousePos = pointerPosition.action.ReadValue<Vector2>();
+        mousePos.z = Camera.main.nearClipPlane;
+        return Camera.main.ScreenToWorldPoint(mousePos);
     }
 }

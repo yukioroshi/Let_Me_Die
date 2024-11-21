@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 811913268069583124}
   - component: {fileID: 1962214362944500964}
   - component: {fileID: 3811095615943748260}
+  - component: {fileID: -2933816946672667163}
   m_Layer: 0
-  m_Name: Ennemie
+  m_Name: Lvl1Ennemie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -167,4 +168,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ennemi: {fileID: 206785932243389858}
   player: {fileID: 0}
-  speed: 0.01
+  speed: 0.02
+--- !u!114 &-2933816946672667163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206785932243389858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 383692858f5516a448415e6cc0666ccd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pHealth: {fileID: 0}
+  damage: 20
