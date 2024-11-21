@@ -20,10 +20,11 @@ public class PlayerMovement : MonoBehaviour
     Vector2 moveDirection = Vector2.zero;
     private Vector2 pointerInput;
 
+    [SerializeField]
     private weaponParent weaponparent;
 
     private InputAction move;
-    private InputAction fire;
+    private InputAction attack;
 
     private void Awake()
     {
@@ -37,15 +38,15 @@ public class PlayerMovement : MonoBehaviour
         move = playerControls.Player.Move;
         move.Enable();
 
-        fire = playerControls.Player.Fire;
-        fire.Enable();
-        fire.performed += Fire;
+        attack = playerControls.Player.Fire;
+        attack.Enable();
+        attack.performed += Fire;
     }
 
     private void OnDisable()
     {
         move.Disable();
-        fire.Disable();
+        attack.Disable();
     }
 
 
@@ -62,7 +63,6 @@ public class PlayerMovement : MonoBehaviour
 
         pointerInput = GetPointerInput();
         weaponparent.PointerPosition = pointerInput;
-
     }
 
     private void FixedUpdate()
@@ -72,7 +72,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Fire(InputAction.CallbackContext context)
     {
-        Debug.Log("piuu");
+        weaponparent.Attack();
+        //Debug.Log("piuu");
     }
 
     private Vector2 GetPointerInput()
