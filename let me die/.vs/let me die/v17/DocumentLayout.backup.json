@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\emirabella\\Documents\\GitHub\\Let_Me_Die\\let me die\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6C89FE07-3F58-7D0B-7670-5439AE97010C}|Assembly-CSharp.csproj|C:\\Users\\emirabella\\Documents\\GitHub\\Let_Me_Die\\let me die\\assets\\script\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6C89FE07-3F58-7D0B-7670-5439AE97010C}|Assembly-CSharp.csproj|c:\\users\\emirabella\\documents\\github\\let_me_die\\let me die\\assets\\script\\playerrotate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C89FE07-3F58-7D0B-7670-5439AE97010C}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playerrotate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C89FE07-3F58-7D0B-7670-5439AE97010C}|Assembly-CSharp.csproj|c:\\users\\emirabella\\documents\\github\\let_me_die\\let me die\\assets\\script\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6C89FE07-3F58-7D0B-7670-5439AE97010C}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C89FE07-3F58-7D0B-7670-5439AE97010C}|Assembly-CSharp.csproj|c:\\users\\emirabella\\documents\\github\\let_me_die\\let me die\\assets\\script\\weaponparent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6C89FE07-3F58-7D0B-7670-5439AE97010C}|Assembly-CSharp.csproj|C:\\Users\\emirabella\\Documents\\GitHub\\Let_Me_Die\\let me die\\assets\\script\\weaponparent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6C89FE07-3F58-7D0B-7670-5439AE97010C}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\weaponparent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,7 +23,7 @@
       "RelativeMoniker": "D:0:0:{6C89FE07-3F58-7D0B-7670-5439AE97010C}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ennemiebehaviourscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C89FE07-3F58-7D0B-7670-5439AE97010C}|Assembly-CSharp.csproj|c:\\users\\emirabella\\documents\\github\\let_me_die\\let me die\\assets\\script\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6C89FE07-3F58-7D0B-7670-5439AE97010C}|Assembly-CSharp.csproj|C:\\Users\\emirabella\\Documents\\GitHub\\Let_Me_Die\\let me die\\assets\\script\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6C89FE07-3F58-7D0B-7670-5439AE97010C}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,11 +34,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "PlayerRotate.cs",
+              "DocumentMoniker": "C:\\Users\\emirabella\\Documents\\GitHub\\Let_Me_Die\\let me die\\Assets\\Script\\PlayerRotate.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\PlayerRotate.cs",
+              "ToolTip": "C:\\Users\\emirabella\\Documents\\GitHub\\Let_Me_Die\\let me die\\Assets\\Script\\PlayerRotate.cs",
+              "RelativeToolTip": "Assets\\Script\\PlayerRotate.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAuwCAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T11:54:02.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "weaponParent.cs",
               "DocumentMoniker": "C:\\Users\\emirabella\\Documents\\GitHub\\Let_Me_Die\\let me die\\Assets\\Script\\weaponParent.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\weaponParent.cs",
@@ -42,12 +59,11 @@
               "RelativeToolTip": "Assets\\Script\\weaponParent.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T10:07:27.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-21T10:07:27.247Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "PlayerHealth.cs",
               "DocumentMoniker": "C:\\Users\\emirabella\\Documents\\GitHub\\Let_Me_Die\\let me die\\Assets\\Script\\PlayerHealth.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\PlayerHealth.cs",
@@ -55,12 +71,11 @@
               "RelativeToolTip": "Assets\\Script\\PlayerHealth.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T11:53:48.424Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T11:53:48.424Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "EnemySpawner.cs",
               "DocumentMoniker": "C:\\Users\\emirabella\\Documents\\GitHub\\Let_Me_Die\\let me die\\Assets\\Script\\EnemySpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\EnemySpawner.cs",
@@ -68,12 +83,11 @@
               "RelativeToolTip": "Assets\\Script\\EnemySpawner.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAmwB0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T10:38:47.695Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T10:38:47.695Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ennemieBehaviourScript.cs",
               "DocumentMoniker": "C:\\Users\\emirabella\\Documents\\GitHub\\Let_Me_Die\\let me die\\Assets\\Script\\ennemieBehaviourScript.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\ennemieBehaviourScript.cs",
@@ -81,12 +95,11 @@
               "RelativeToolTip": "Assets\\Script\\ennemieBehaviourScript.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T10:17:04.337Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T10:17:04.337Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "C:\\Users\\emirabella\\Documents\\GitHub\\Let_Me_Die\\let me die\\Assets\\Script\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\PlayerMovement.cs",
