@@ -8,6 +8,7 @@ public class PlayerRotate : MonoBehaviour
     // Orientation initiale (droite)
     private bool isFacingRight = true;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,10 +46,10 @@ public class PlayerRotate : MonoBehaviour
         // Inverser la direction
         isFacingRight = !isFacingRight;
 
-        // Inverser le scale en y (mirroir horizontal)
-        Vector3 scale = transform.localScale;
-        scale.y *= -1;
-        transform.localScale = scale;
+        // Appliquer une rotation de 180° ou revenir à 0°
+        float yRotation = isFacingRight ? 0f : 180f;
+        transform.rotation = Quaternion.Euler(0f, yRotation, 0f);
+
     }
 
 }

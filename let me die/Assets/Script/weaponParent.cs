@@ -10,9 +10,34 @@ public class weaponParent : MonoBehaviour
     public float delay = 0.3f;
     private bool attackBlocked;
 
+    public bool IsAttacking {  get; private set; }
+
+    public Transform cicrcleOrigin;
+    public float radius; 
+
+    public void ResetIsAttacking()
+    {
+        IsAttacking = false;
+    }
+
     private void Update()
     {
-        transform.right = (PointerPosition-(Vector2)transform.position).normalized;
+        if (IsAttacking)
+            return;
+        Vector2 direction = (PointerPosition - (Vector2)transform.position).normalized;
+        transform.right = direction;
+
+        Vector2 scale = transform.localScale;
+        if(direction.x < 0)
+        {
+            scale.y = -1;
+        }
+        else if(direction.x > 0)
+        {
+            scale.y = 1;
+        }
+        transform.localScale = scale;
+        
     }
 
     public void Attack()
@@ -20,6 +45,7 @@ public class weaponParent : MonoBehaviour
         if (attackBlocked) 
             return;
         animator.SetTrigger("Attack");
+        IsAttacking = true;
         attackBlocked = true;
         StartCoroutine(DelayAttack());
     }
@@ -28,5 +54,12 @@ public class weaponParent : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         attackBlocked = false;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Vector3 position = cicrcleOrigin == null ? Vector3.zero : cicrcleOrigin.position;
+        Gizmos.DrawWireSphere(position, radius);
     }
 }
