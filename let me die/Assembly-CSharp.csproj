@@ -70,6 +70,7 @@
     <Compile Include="Assets\Script\EnemySpawner.cs" />
     <Compile Include="Assets\Script\PlayerHealth.cs" />
     <Compile Include="Assets\Script\weaponParent.cs" />
+    <Compile Include="Assets\Script\HealthTracker.cs" />
     <Compile Include="Assets\Script\PlayerMovement.cs" />
   </ItemGroup>
   <ItemGroup>

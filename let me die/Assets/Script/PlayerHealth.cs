@@ -12,9 +12,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField]
     public float health, maxHealth;
 
-    [SerializeField]
-    private Image healthBar;
-    public Gradient healthgradiant;
+
 
     public UnityEvent<GameObject> OnHitWithReference, OnDeathWithReference;
 
@@ -33,32 +31,16 @@ public class PlayerHealth : MonoBehaviour
     void Update()
     {
         //healthBar.fillAmount = Mathf.Clamp(health / maxHealth, 0, 1);
-        UpdateHealthBar();
 
-    }
 
-    void UpdateHealthBar()
-    {
-        // Calculer la proportion de vie restante
-        float healthPercentage = Mathf.Clamp01(health / maxHealth);
-
-        // Appliquer la couleur du gradient
-        healthBar.color = healthgradiant.Evaluate(healthPercentage);
-
-        // Ajuster la largeur de la barre (si nécessaire)
-        healthBar.fillAmount = healthPercentage;
     }
 
     //Exemple : fonction à appeler quand la vie change
-    public void SetHealth(float newHealth)
-    {
-        health = newHealth;
-    }
-
-    //void TakeDamage(int damage)
+    //public void SetHealth(float newHealth)
     //{
-    //    health -= damage;
+    //    health = newHealth;
     //}
+
 
     public void InitializeHealth(int healthValue)
     {

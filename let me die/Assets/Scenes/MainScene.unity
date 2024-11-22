@@ -727,11 +727,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1265139571 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1626769478160185182, guid: 5da0f64c052e07c4d86eec0b33033e6e, type: 3}
-  m_PrefabInstance: {fileID: 2146947202498471148}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1741628468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -793,14 +788,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 84988981954971585, guid: 5da0f64c052e07c4d86eec0b33033e6e, type: 3}
-      propertyPath: radius
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 84988981954971585, guid: 5da0f64c052e07c4d86eec0b33033e6e, type: 3}
-      propertyPath: cicrcleOrigin
-      value: 
-      objectReference: {fileID: 1265139571}
     - target: {fileID: 1789647773234028912, guid: 5da0f64c052e07c4d86eec0b33033e6e, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -876,6 +863,78 @@ PrefabInstance:
     - target: {fileID: 3988265195802905447, guid: 5da0f64c052e07c4d86eec0b33033e6e, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487638425996992882, guid: 5da0f64c052e07c4d86eec0b33033e6e, type: 3}
+      propertyPath: Health
+      value: 
+      objectReference: {fileID: 1805159755763608219}
+    - target: {fileID: 5487638425996992882, guid: 5da0f64c052e07c4d86eec0b33033e6e, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 114593512}
+    - target: {fileID: 5487638425996992882, guid: 5da0f64c052e07c4d86eec0b33033e6e, type: 3}
+      propertyPath: healthgradiant.ctime1
+      value: 21010
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487638425996992882, guid: 5da0f64c052e07c4d86eec0b33033e6e, type: 3}
+      propertyPath: healthgradiant.ctime2
+      value: 38936
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487638425996992882, guid: 5da0f64c052e07c4d86eec0b33033e6e, type: 3}
+      propertyPath: healthgradiant.ctime3
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487638425996992882, guid: 5da0f64c052e07c4d86eec0b33033e6e, type: 3}
+      propertyPath: healthgradiant.key0.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487638425996992882, guid: 5da0f64c052e07c4d86eec0b33033e6e, type: 3}
+      propertyPath: healthgradiant.key0.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487638425996992882, guid: 5da0f64c052e07c4d86eec0b33033e6e, type: 3}
+      propertyPath: healthgradiant.key1.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487638425996992882, guid: 5da0f64c052e07c4d86eec0b33033e6e, type: 3}
+      propertyPath: healthgradiant.key1.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487638425996992882, guid: 5da0f64c052e07c4d86eec0b33033e6e, type: 3}
+      propertyPath: healthgradiant.key1.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487638425996992882, guid: 5da0f64c052e07c4d86eec0b33033e6e, type: 3}
+      propertyPath: healthgradiant.key2.b
+      value: 0.04045032
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487638425996992882, guid: 5da0f64c052e07c4d86eec0b33033e6e, type: 3}
+      propertyPath: healthgradiant.key2.g
+      value: 0.83960825
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487638425996992882, guid: 5da0f64c052e07c4d86eec0b33033e6e, type: 3}
+      propertyPath: healthgradiant.key2.r
+      value: 0.9528302
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487638425996992882, guid: 5da0f64c052e07c4d86eec0b33033e6e, type: 3}
+      propertyPath: healthgradiant.key3.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487638425996992882, guid: 5da0f64c052e07c4d86eec0b33033e6e, type: 3}
+      propertyPath: healthgradiant.key3.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487638425996992882, guid: 5da0f64c052e07c4d86eec0b33033e6e, type: 3}
+      propertyPath: healthgradiant.key3.r
+      value: 0.17191482
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487638425996992882, guid: 5da0f64c052e07c4d86eec0b33033e6e, type: 3}
+      propertyPath: healthgradiant.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487638425996992882, guid: 5da0f64c052e07c4d86eec0b33033e6e, type: 3}
+      propertyPath: healthgradiant.m_NumColorKeys
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6175097386966664559, guid: 5da0f64c052e07c4d86eec0b33033e6e, type: 3}
       propertyPath: m_UIInputModule
