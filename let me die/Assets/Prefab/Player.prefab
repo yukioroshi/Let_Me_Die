@@ -47,6 +47,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1728105287680304302}
   delay: 0.45
+  cicrcleOrigin: {fileID: 1626769478160185182}
+  radius: 1
+--- !u!1 &3988265195802905447
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1626769478160185182}
+  m_Layer: 0
+  m_Name: CircleOrigin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1626769478160185182
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3988265195802905447}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.5599859, y: 0.5816997, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3809491159293961042}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7291299944735273710
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,7 +496,8 @@ Transform:
   m_LocalPosition: {x: 0.775, y: 0.58, z: 0}
   m_LocalScale: {x: 0.2809, y: 1.7191001, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1626769478160185182}
   m_Father: {fileID: 4355193455166723937}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7894239248325200669

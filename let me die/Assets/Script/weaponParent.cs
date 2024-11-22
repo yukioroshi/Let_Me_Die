@@ -62,4 +62,17 @@ public class weaponParent : MonoBehaviour
         Vector3 position = cicrcleOrigin == null ? Vector3.zero : cicrcleOrigin.position;
         Gizmos.DrawWireSphere(position, radius);
     }
+
+    public void DetectColliders()
+    {
+        foreach (Collider2D collider in Physics2D.OverlapCircleAll(cicrcleOrigin.position, radius))
+        {
+            Debug.Log(collider.name);
+            PlayerHealth health;
+            if (health = collider.GetComponent<PlayerHealth>())
+            {
+                health.GetHit(1, transform.parent.gameObject);
+            }
+        }
+    }
 }
