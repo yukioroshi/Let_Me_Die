@@ -13,7 +13,10 @@ public class weaponParent : MonoBehaviour
     public bool IsAttacking {  get; private set; }
 
     public Transform cicrcleOrigin;
-    public float radius; 
+    public float radius;
+
+    [SerializeField]
+    public int Damage;
 
     public void ResetIsAttacking()
     {
@@ -67,12 +70,18 @@ public class weaponParent : MonoBehaviour
     {
         foreach (Collider2D collider in Physics2D.OverlapCircleAll(cicrcleOrigin.position, radius))
         {
-            Debug.Log(collider.name);
+            //Debug.Log(collider.name);
             PlayerHealth health;
             if (health = collider.GetComponent<PlayerHealth>())
             {
-                health.GetHit(1, transform.parent.gameObject);
+                health.GetHit(Damage, transform.parent.gameObject);
             }
         }
+    }
+
+    public void AttackUpgrade()
+    {
+        Damage += 1;
+        MoneyManager.score -= 30;
     }
 }

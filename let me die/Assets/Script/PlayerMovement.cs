@@ -8,23 +8,27 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody2D rb2d;
+    private Vector2 moveInput;
+    private Animator animator;
 
-    [SerializeField]
-    public float movespeed = 10f;
+    
+    public float movespeed;
 
     public PlayerInputActions playerControls;
 
     [SerializeField]
     private InputActionReference pointerPosition;
 
-    Vector2 moveDirection = Vector2.zero;
+
     private Vector2 pointerInput;
 
     [SerializeField]
     private weaponParent weaponparent;
 
-    private InputAction move;
+
     private InputAction attack;
+
+
 
     private void Awake()
     {
@@ -35,8 +39,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnEnable()
     {
-        move = playerControls.Player.Move;
-        move.Enable();
 
         attack = playerControls.Player.Fire;
         attack.Enable();
@@ -45,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnDisable()
     {
-        move.Disable();
+        
         attack.Disable();
     }
 
@@ -53,13 +55,14 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        rb2d = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        moveDirection = move.ReadValue<Vector2>();
+        
 
         pointerInput = GetPointerInput();
         weaponparent.PointerPosition = pointerInput;
@@ -67,7 +70,27 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb2d.velocity = new Vector2(moveDirection.x * movespeed, moveDirection.y * movespeed);
+        
+        rb2d.velocity = moveInput * movespeed;
+    }
+
+
+    public void Move(InputAction.CallbackContext context)
+    {
+        animator.SetBool("isWalking", true);
+
+        if (context.canceled)
+        {
+            animator.SetBool("isWalking", false);
+            animator.SetFloat("LastInputX", moveInput.x);
+            animator.SetFloat("LastInputY", moveInput.x);
+
+        }
+
+        moveInput = context.ReadValue<Vector2>();
+        animator.SetFloat("InputX", moveInput.x);
+        animator.SetFloat("InputY", moveInput.y);
+        //Debug.Log("moving");
     }
 
     private void Fire(InputAction.CallbackContext context)
@@ -81,5 +104,11 @@ public class PlayerMovement : MonoBehaviour
         Vector3 mousePos = pointerPosition.action.ReadValue<Vector2>();
         mousePos.z = Camera.main.nearClipPlane;
         return Camera.main.ScreenToWorldPoint(mousePos);
+    }
+
+    public void SpeedUpgrade()
+    {
+        movespeed += 1;
+        MoneyManager.score -= 30;
     }
 }
