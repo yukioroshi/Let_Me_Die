@@ -2,7 +2,7 @@
 
 ## Description
 
-"Let Me Die" is a project primarily created to depen my knoledge in unity and acquire the ability to be able to create games on my own from scratch.
+"Let Me Die" is a project primarily created to depen my knowledge in unity and acquire the ability to be able to create games on my own from scratch.
 
 
 ## Screenshots
